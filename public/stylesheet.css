@@ -1,0 +1,52 @@
+.split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+
+}
+
+.left {
+  padding-top: 200px;
+      width: 68%;
+      left: 0;
+      background-color: rgb(252, 252, 252);
+      text-align: right;
+      float: left;
+      font-family: helvetica;
+      font-size: 30px;
+}
+
+.right {
+  
+    padding-top: 250px;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 100px;
+    width: 30%;
+    right: 0;
+    background-color: black;
+}
+
+
+
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: black;
+}
+
+.high-usage {
+  color: red;
+}
+
+#temp {
+  font-size: 200px;
+  margin-bottom: 0px;
+}

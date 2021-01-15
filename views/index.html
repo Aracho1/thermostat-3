@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="../public/stylesheet.css">
+
 </head>
 <body>
 
+<div class='split left'>
 <section>
-  <h1>Current temperature:<span id="city-temp"></span></h1>
+  <h1 id="temp">Thermostat</h1>
+  <h2>Current temperature:  <span id="city-temp"></span> °C</h2>
   <select id="current-city">
     <option value="london">London</option>
     <option value="paris">Paris</option>
     <option value="seoul">Seoul</option>
     <option value="amsterdam">Amsterdam</option>
-    <option value="capetown">Cape Town</option>
+    <option value="antarctica">Antarctica</option>
     <option value="Bogota">Bogota</option>
   </select>
 </section>
 
-<!-- <section>
-    <h1>Current temperature: <span id="city-temp">20</span></h1>
-    <form id="select-city">
-      <input id="current-city" type="text" placeholder="Enter a city"></input>
-      <input type="submit"></input>
-    </form>
-  </section> -->
 
-<h1 id="temp">Thermostat</h1>
 
 <p>Power Saving Mode: <span id='power-saving-mode'>ON</span></p>
 
@@ -33,6 +28,13 @@
 <button id="temperature-down">Turn Down</button>
 <button id="toggle-power-saving">Toggle Power Saving Mode</button>
 <button id="reset">RESET</button>
+</div>
+
+<div class='split right'>
+  <h1>degrees</h1>
+  <img src='../public/thermo_inverted.png'>
+</div>
+
 
 <script src='../src/Thermostat.js'></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
